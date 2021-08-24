@@ -7,29 +7,29 @@ Javascript Notes
 * Deep copy: 어느 한 쪽의 수정으로 다른 쪽에 영향을 미치지 않음.
 
 1. Spread Operator (shallow copy)
-<pre><code>
-  array = [1, 2, [3]]
-  array_copy = [...array]
-</code></pre>
+```javascript
+array = [1, 2, [3]]
+array_copy = [...array]
+```
 
 2. for 문 (shallow copy)
-<pre><code>
-  array = [1, 2, [3]]
-  array_copy = []
+```javascript
+array = [1, 2, [3]]
+array_copy = []
 
-  for (let i < 0; i < array.length; i++) {
-    array_copy[i] = array[i]
-  }
-</code></pre>
+for (let i < 0; i < array.length; i++) {
+  array_copy[i] = array[i]
+}
+```
 
 3. Array.filter() (shallow copy)
-<pre><code>
-  array = [1, 2, [3]]
-  array_copy = array.filter(() => true)
-</code></pre>
+```javascript
+array = [1, 2, [3]]
+array_copy = array.filter(() => true)
+```
 
 4. JSON.parse and JSON stringify (deep copy)
-<pre><code>
-  array = [1, 2, [3]]
-  array_copy = JSON.parse(JSON.stringify(array))
-</code></pre>
+```javascript
+array = [1, 2, [3]]
+array_copy = JSON.parse(JSON.stringify(array))
+```
