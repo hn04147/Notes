@@ -1,6 +1,3 @@
-Javascript Notes
-<br/>
-
 ## Array copy in Javascript
 
 * Shallow copy: 복사 된 배열에도 영향을 미침. 한 쪽의 값이 바뀌면 다른 한 쪽도 값이 바뀜.
