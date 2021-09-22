@@ -1,4 +1,5 @@
 ## Array copy in Javascript
+<br/>
 
 * Shallow copy: 복사 된 배열에도 영향을 미침. 한 쪽의 값이 바뀌면 다른 한 쪽도 값이 바뀜.
 * Deep copy: 어느 한 쪽의 수정으로 다른 쪽에 영향을 미치지 않음.
@@ -30,6 +31,4 @@ array_copy = array.filter(() => true)
 array = [1, 2, [3]]
 array_copy = JSON.parse(JSON.stringify(array))
 ```
-<br/><br/><br/><br/>
---------------
 
