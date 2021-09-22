@@ -1,9 +1,5 @@
 Javascript Notes
-================
-
-* Array Copy in Javascript
-<br/><br/><br/><br/>
-----------------
+<br/>
 
 ## Array copy in Javascript
 
