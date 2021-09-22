@@ -29,6 +29,3 @@ const Index = () => {
 
 export default Index
 ```
-<br/><br/><br/><br/>
------------------
-
