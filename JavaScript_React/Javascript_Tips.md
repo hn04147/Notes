@@ -20,3 +20,42 @@ white-space: nowrap;
 글자가```div```의 길이보다 길 때, 위 코드를 css에 추가해주면 ```ABCDE...``` 이런식으로 보인다.
 
 <br/>
+
+### 3. 스크롤바 꾸미기
+``` Javascript
+overflow: scroll;      // none
+overflow-x: scroll;    // none
+overflow-y: scroll;    // none
+
+::-webkit-scrollbar {
+  width: 5px;          // 세로축 스크롤바 길이 
+  height: 100px;       // 가로축 스크롤바 길이
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {      // 스크롤바
+  border-radius: 50%;  
+  background-color: gray;
+}
+::-webkit-scrollbar-button {     // 위, 아래 버튼
+  display: none;       
+}
+
+// styled component에서 사용 시 &::-webkit-scrollbar {}
+```
+css에 위 코드를 추가해주자.
+
+<br/>
+
+4. 좌표 구하기
+* Element의 좌표
+``` Javascript
+const element = document.getElementById('element id')
+const elementPos = element.getBoundingClientRect()
+```
+* 마우스 절대 위치
+``` Javascript
+(event) => clientX
+(event) => clientY
+```
