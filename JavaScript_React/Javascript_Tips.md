@@ -48,7 +48,7 @@ css에 위 코드를 추가해주자.
 
 <br/>
 
-4. 좌표 구하기
+### 4. 좌표 구하기
 * Element의 좌표
 ``` Javascript
 const element = document.getElementById('element id')
