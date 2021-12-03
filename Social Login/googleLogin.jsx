@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react"
 import GoogleLogin from "react-google-login"
 
-
 // 구글 로그인
 // GOOGLE LOGIN
 
