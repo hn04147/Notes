@@ -31,4 +31,3 @@ array_copy = array.filter(() => true)
 array = [1, 2, [3]]
 array_copy = JSON.parse(JSON.stringify(array))
 ```
-
