@@ -1,8 +1,8 @@
 <br />
 
-* [맥에서 분할 압축 푸는 방법](맥에서-분할-압축-푸는-방법)  
-* [Mac 터미널(iterm2) 커스텀](Mac-터미널(iterm2)-커스텀)  
-* [Ssh로 remote server 접속 시, terminal 색깔 입히기](Ssh로-remote-server-접속-시,-terminal-색깔-입히기)  
+1. [맥에서 분할 압축 푸는 방법](#1-맥에서-분할-압축-푸는-방법)  
+2. [Mac 터미널 iterm2 커스텀](#2-Mac-터미널-iterm2-커스텀)  
+3. [Ssh로 remote server 접속 시 terminal 색깔 입히기](#3-Ssh로-remote-server-접속-시-terminal-색깔-입히기)  
 
 <br />
 
@@ -17,7 +17,7 @@
 
 <br />
 
-# 2. Mac 터미널(iterm2) 커스텀
+# 2. Mac 터미널 iterm2 커스텀
 
 ### oh-my-zsh 삭제
 >이전에 터미널을 커스텀 한 적이 있어 Oh My Zsh가 이미 깔려있는 상황이라면 아래 코드로 터미널 초기화를 시켜준다.
@@ -56,7 +56,7 @@ export PATH=$HOME/bin:/usr/local/bin:/anaconda3:/anaconda3/bin:$PATH
 
 <br />
 
-# 3. Ssh로 remote server 접속 시, terminal 색깔 입히기
+# 3. Ssh로 remote server 접속 시 terminal 색깔 입히기
 * ```~/.bashrc``` 에 아래 코드를 추가해준다.
 ```
 # >>> enable color support of terminal directory >>>
