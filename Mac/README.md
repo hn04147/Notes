@@ -1,3 +1,11 @@
+<br />
+
+* [1. 맥에서 분할 압축 푸는 방법](1.-맥에서-분할-압축-푸는-방법)  
+* [2. Mac 터미널(iterm2) 커스텀](2.-Mac-터미널(iterm2)-커스텀)  
+* [3. Ssh로 remote server 접속 시, terminal 색깔 입히기](3.-Ssh로-remote-server-접속-시,-terminal-색깔-입히기)  
+
+<br />
+
 # 1. 맥에서 분할 압축 푸는 방법
 
 1. ```zip -FF 분할압축된원본파일명.zip --out 한개로압축될파일명.zip```  
@@ -45,3 +53,28 @@ export PATH=$HOME/bin:/usr/local/bin:/anaconda3:/anaconda3/bin:$PATH
  unset __conda_setup
  # <<< conda initialize <<<
 ```
+
+<br />
+
+# 3. Ssh로 remote server 접속 시, terminal 색깔 입히기
+* ```~/.bashrc``` 에 아래 코드를 추가해준다.
+```
+# >>> enable color support of terminal directory >>>
+export PS1="\[\e]0;\u@\h \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\] \[\033[01;34m\]\w #\[\033[00m\] "
+# <<< enable color support of terminal directory <<<
+
+
+# >>> enable color support of ls and also add handy aliases >>>
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
+
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+# <<< enable color support of ls and also add handy aliases <<<
+```
+* 이후 ```source ~/.bashrc``` 를 실행하여 적용시켜준다.
