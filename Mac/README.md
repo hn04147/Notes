@@ -1,8 +1,8 @@
 <br />
 
-* [1. 맥에서 분할 압축 푸는 방법](1.-맥에서-분할-압축-푸는-방법)  
-* [2. Mac 터미널(iterm2) 커스텀](2.-Mac-터미널(iterm2)-커스텀)  
-* [3. Ssh로 remote server 접속 시, terminal 색깔 입히기](3.-Ssh로-remote-server-접속-시,-terminal-색깔-입히기)  
+* [맥에서 분할 압축 푸는 방법](1.-맥에서-분할-압축-푸는-방법)  
+* [Mac 터미널(iterm2) 커스텀](2.-Mac-터미널(iterm2)-커스텀)  
+* [Ssh로 remote server 접속 시, terminal 색깔 입히기](3.-Ssh로-remote-server-접속-시,-terminal-색깔-입히기)  
 
 <br />
 
