@@ -3,6 +3,7 @@
 1. [맥에서 분할 압축 푸는 방법](#1-맥에서-분할-압축-푸는-방법)  
 2. [Mac 터미널 iterm2 커스텀](#2-Mac-터미널-iterm2-커스텀)  
 3. [Ssh로 remote server 접속 시 terminal 색깔 입히기](#3-Ssh로-remote-server-접속-시-terminal-색깔-입히기)  
+4. [Ssh 비밀번호로 접속 설정하기](#4-Ssh-비밀번호로-접속-설정하기)
 
 <br />
 
@@ -78,3 +79,12 @@ fi
 # <<< enable color support of ls and also add handy aliases <<<
 ```
 * 이후 ```source ~/.bashrc``` 를 실행하여 적용시켜준다.
+
+<br />
+
+# 4. Ssh 비밀번호로 접속 설정하기
+
+1. root 권한으로 ```passwd root``` 를 입력하여 ```Enter new UNIX passwd``` 와 ```Retype new UNIX passwd``` 에 동일한 비밀번호를 입력한다.
+2. root 권한으로 ```vim /etc/ssh/sshd_config``` 를 입력하여 ```/etc/ssh/sshd_config``` 파일을 열어서 ```PasswordAuthentication yes``` 로 변경을 해준다.
+3. 마지막으로 root 권한으로 ```service ssh restart```를 하여 ssh 재부팅을 시켜준다.
+4. 이후 ```ssh root@<your ip> -p <your port>```로 접속을 하면 설정한 비밀번호를 입력하여 접속할 수 있다.
