@@ -5,7 +5,7 @@
 3. [Ssh로 remote server 접속 시 terminal 색깔 입히기](#3-Ssh로-remote-server-접속-시-terminal-색깔-입히기)  
 4. [Ssh 비밀번호로 접속 설정하기](#4-Ssh-비밀번호로-접속-설정하기)
 5. [Ssh로 remote server 접속 시 alias 기본으로 설정 하기](#5-Ssh로-remote-server-접속-시-alias-기본으로-설정-하기)
-6. [Ssh로 remote server 접속 시 ```.bashrc``` 기본으로 실행하기](#6-Ssh로-remote-server-접속-시-```.bashrc```-기본으로-실행하기)
+6. [Ssh로 remote server 접속 시 .bashrc 기본으로 실행하기](#6-Ssh로-remote-server-접속-시-.bashrc-기본으로-실행하기)
 
 <br />
 
@@ -107,7 +107,7 @@ fi
 # <<< enable '.bash_aliases' <<<<
 ```
 
-# 6. Ssh로 remote server 접속 시 ```.bashrc``` 기본으로 실행하기
+# 6. Ssh로 remote server 접속 시 .bashrc 기본으로 실행하기
 * ```~/.bash_profile``` 파일을 생성하고 아래 코드를 추가한다.
 ```
 if [ -f ~/.bashrc ]; then 
