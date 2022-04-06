@@ -4,6 +4,8 @@
 2. [Mac 터미널 iterm2 커스텀](#2-Mac-터미널-iterm2-커스텀)  
 3. [Ssh로 remote server 접속 시 terminal 색깔 입히기](#3-Ssh로-remote-server-접속-시-terminal-색깔-입히기)  
 4. [Ssh 비밀번호로 접속 설정하기](#4-Ssh-비밀번호로-접속-설정하기)
+5. [Ssh로 remote server 접속 시 alias 기본으로 설정 하기](#5-Ssh로-remote-server-접속-시-alias-기본으로-설정-하기)
+6. [Ssh로 remote server 접속 시 ```.bashrc``` 기본으로 실행하기](#6-Ssh로-remote-server-접속-시-```.bashrc```-기본으로-실행하기)
 
 <br />
 
@@ -88,3 +90,28 @@ fi
 2. root 권한으로 ```vim /etc/ssh/sshd_config``` 를 입력하여 ```/etc/ssh/sshd_config``` 파일을 열어서 ```PasswordAuthentication yes``` 로 변경을 해준다.
 3. 마지막으로 root 권한으로 ```service ssh restart```를 하여 ssh 재부팅을 시켜준다.
 4. 이후 ```ssh root@<your ip> -p <your port>```로 접속을 하면 설정한 비밀번호를 입력하여 접속할 수 있다.
+
+<br />
+
+# 5. Ssh로 remote server 접속 시 alias 기본으로 설정 하기
+* ```~/.bash_aliases``` 에 ```alias`를 적용할 코드를 작성해준다.
+```
+alias ll='ls -al'
+```
+* ```~/.bashrc``` 에 아래 코드를 추가해준다.
+```
+# >>> enable '.bash_aliases' >>>
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+# <<< enable '.bash_aliases' <<<<
+```
+
+# 6. Ssh로 remote server 접속 시 ```.bashrc``` 기본으로 실행하기
+* ```~/.bash_profile``` 파일을 생성하고 아래 코드를 추가한다.
+```
+if [ -f ~/.bashrc ]; then 
+  . ~/.bashrc 
+cd ~
+fi
+```
